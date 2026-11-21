@@ -98,7 +98,9 @@ No build output — upload the directory as-is.
 - **Local Wi-Fi:** the `python3 -m http.server` command above.
 
 Live now at **https://1nationofraiders-wq.github.io/our-apps-site/**, published
-from this repo's `main` branch via GitHub Pages.
+from this repo's `main` branch via GitHub Pages. The free Agate Lens APK is a
+working download from the published GitHub release; paid products stay in the
+honest "checkout link to be connected" state until merchant URLs are added.
 
 Relative paths are used throughout, so a project subdirectory works without
 code changes. The only absolute URL in `data.js` (`STORE.url`) is informational.

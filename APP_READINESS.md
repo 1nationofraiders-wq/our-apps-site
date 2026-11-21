@@ -81,4 +81,5 @@ rebuilt, reinstalled successfully.
 All 12 store listings have confirmed modest prices (free tools $0; bridge apps
 and Story Mixer $0.99; EarnStack $1.99; Fungi Field and Kid Code
 Studio $2.99; Agate Lens Pro $4.99; kits $59/$99/$149). Checkout URLs are still
-empty by design — see `SELLING_SETUP.md`.
+empty by design — see `SELLING_SETUP.md`. Exception: the free Agate Lens APK
+has a real download link to the published GitHub release, verified live.
