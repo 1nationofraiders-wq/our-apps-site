@@ -15,7 +15,7 @@ window.STORE = Object.freeze({
     "No account or tracking on this site. Payments are handled by our checkout " +
     "provider — we never see card details. Apps save their data on your device " +
     "unless a listing says otherwise.",
-  url: "http://192.168.12.243:8123/",
+  url: "https://1nationofraiders-wq.github.io/our-apps-site/",
   owner: "1nationofraiders-wq"
 });
 

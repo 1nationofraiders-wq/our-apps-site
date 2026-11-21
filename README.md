@@ -97,6 +97,9 @@ No build output — upload the directory as-is.
 - **Cloudflare Pages:** build command empty, output directory `/`.
 - **Local Wi-Fi:** the `python3 -m http.server` command above.
 
+Live now at **https://1nationofraiders-wq.github.io/our-apps-site/**, published
+from this repo's `main` branch via GitHub Pages.
+
 Relative paths are used throughout, so a project subdirectory works without
 code changes. The only absolute URL in `data.js` (`STORE.url`) is informational.
 
