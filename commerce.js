@@ -23,8 +23,9 @@ window.COMMERCE = Object.freeze({
   products: {
     "agate-lens": {
       options: [
-        { sku: "agate-lens-free", label: "Agate Lens (free)", priceCents: 0, confirmed: true, url: "",
-          note: "No payment. Download the signed APK." },
+        { sku: "agate-lens-free", label: "Agate Lens (free)", priceCents: 0, confirmed: true,
+                url: "https://github.com/1nationofraiders-wq/agate-site/releases/download/v0.2.1/agate-lens-v0.2.1.apk",
+                note: "Free signed APK v0.2.1, delivered from our published GitHub release." },
         { sku: "agate-lens-pro", label: "Agate Lens Pro", priceCents: 499, confirmed: true, url: "",
           note: "Not connected yet — the app has no web-licence support. Google Play Billing is the intended path." }
       ]

@@ -72,7 +72,8 @@
     var rows = p.options.map(function (o) {
       var price = o.priceCents === null ? "Price not set" : (o.priceCents === 0 ? "Free" : money(o.priceCents));
       var star = (o.priceCents !== null && o.priceCents !== 0 && !o.confirmed) ? " (proposed)" : "";
-      var btn = buyButton(o, "Buy " + o.label);
+      var verb = o.priceCents === 0 ? "Download" : "Buy";
+      var btn = buyButton(o, verb + " " + o.label);
       return '<div class="buy-option"><div class="buy-line"><b>' + esc(o.label) + "</b><span>" + esc(price + star) +
         "</span></div>" + (o.note ? '<p class="note">' + esc(o.note) + "</p>" : "") + btn + "</div>";
     }).join("");
