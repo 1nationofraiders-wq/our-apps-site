@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Apps — a small family app store</title>
+<meta name="description" content="A small family app store: field tools, learning apps, browser pages and four Washington bridge-crossing apps, all in one place.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="index">
+<div data-slot="masthead"></div>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow" id="eyebrow">A small family app store</div>
+      <h1 id="hero-title">Useful things we made for the people we know.</h1>
+      <p class="lede" id="hero-lede"></p>
+      <div class="btn-row">
+        <a class="btn primary" href="#catalog">Browse the store</a>
+        <a class="btn" href="bridges.html">See all four bridge apps →</a>
+      </div>
+      <div class="hero-meta">
+        <span><b id="app-total">—</b> apps listed</span>
+        <span><b>4</b> bridge crossings</span>
+        <span><b>No</b> accounts or tracking on this site</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="catalog" style="padding-top:36px">
+    <div class="section-head">
+      <div><div class="eyebrow">The catalog</div><h2>Every app, one place</h2></div>
+      <p>Click a card for the full listing.</p>
+    </div>
+    <div class="controls">
+      <input id="search" class="search" type="search" placeholder="Search apps and features…" aria-label="Search apps">
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="grid" id="grid"></div>
+
+    <div class="bridge-strip">
+      <div class="banner">
+        <div>
+          <div class="eyebrow">One family, four bridges</div>
+          <h2>Same pattern, different water</h2>
+          <p>Deception Pass, Tacoma Narrows, Evergreen Point and Ship Canal all run on the same four-tab design. Open the comparison to see all four at once.</p>
+        </div>
+        <a class="btn primary" href="bridges.html">Compare all four →</a>
+      </div>
+      <div class="mini-grid" id="bridge-strip"></div>
+    </div>
+
+    <section style="margin-top:56px">
+      <div class="section-head">
+        <div><div class="eyebrow">Physical gear</div><h2>Light kits</h2></div>
+        <p>Built for backlit stone work.</p>
+      </div>
+      <div class="grid" id="kits"></div>
+    </section>
+  </section>
+</main>
+
+<div data-slot="footer"></div>
+<script src="data.js"></script>
+<script src="commerce.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  document.getElementById("eyebrow").textContent = window.STORE.eyebrow;
+  document.getElementById("hero-title").textContent = window.STORE.tagline;
+  document.getElementById("hero-lede").textContent = window.STORE.intro;
+  document.getElementById("app-total").textContent = String(window.APPS.length);
+</script>
+</body>
+</html>
